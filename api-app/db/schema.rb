@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_16_183636) do
+ActiveRecord::Schema.define(version: 2019_10_17_154829) do
 
   create_table "populate_databases", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_10_16_183636) do
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "related_articles_ids"
     t.index ["product_id"], name: "index_product_articles_on_product_id"
   end
 
